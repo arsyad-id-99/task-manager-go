@@ -36,7 +36,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/task-manager:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/task-manager:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/task-manager-go:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/task-manager-go:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
